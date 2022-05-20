@@ -1,5 +1,5 @@
 var option = {
-    strings: ['<i>craze#0001 - 811216525322616902</i>', '<i>act broke to stay rich</i>', '<i>Knucks - Home</i>'],
+    strings: ['<i>craze#0001 - 811216525322616902</i>', '<i>act broke to stay rich</i>', '<i>Knucks = Home</i>'],
     typeSpeed: 55,
     backSpeed: 65,
     loop: true,
