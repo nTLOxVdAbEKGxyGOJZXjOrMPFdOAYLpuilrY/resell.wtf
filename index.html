@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/attachments/842610340168728588/940893684986183700/channels4_profile.jpg">
+<meta charset="utf-8">
+<meta property="type" content="website">
+<meta property="title" content="trickster.pw">
+<meta property="description" content="all part of the plan">
+<meta property="url" content="trickster.pw">
+<meta property="og:image" content="https://cdn.discordapp.com/attachments/842610340168728588/940893684986183700/channels4_profile.jpg">
+<meta property="og:description" content="all part of the plan | trickster.pw ">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="trickster#7205">
+<meta property="og:site_name" content="trickster">
+<meta property="og:url" content="https://trickster.pw">
+<meta property="og:type" content="website">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="pragma" content="no-cache">
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<style>
+        *,
+        :after,
+        :before {
+            box-sizing: border-box
+        }
+
+        body,
+        html,
+        li,
+        p,
+        ul {
+            margin: 0;
+            padding: 0
+        }
+
+        ul {
+            list-style: none
+        }
+
+        button {
+            margin: 0
+        }
+
+        body {
+            scroll-behavior: smooth;
+            text-rendering: optimizeSpeed
+        }
+
+        a:not([class]) {
+            -webkit-text-decoration-skip: ink;
+            text-decoration-skip-ink: auto
+        }
+
+        @font-face {
+            font-family: VCR OSD Mono;
+            src: url(assets/fonts/VCROSDMono.woff2) format("woff2"), url(assets/fonts/VCROSDMono.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap
+        }
+
+        @keyframes turn-on-transform {
+            0% {
+                transform: scaleY(.6) translate(0) skew(2deg)
+            }
+
+            6% {
+                transform: scale(2) translateY(-20%) skew(2deg)
+            }
+
+            30% {
+                transform: scale(1) translateY(-20%) skew(-2deg)
+            }
+
+            50% {
+                transform: scaleY(.8) translateY(40%) skew(-2deg)
+            }
+
+            to {
+                transform: scale(1) translate(0) skew(0)
+            }
+        }
+
+        @keyframes turn-on-filter {
+            0% {
+                filter: brightness(1) invert(1) saturate(1.2)
+            }
+
+            3% {
+                filter: brightness(4) invert(1) saturate(2)
+            }
+
+            15% {
+                filter: brightness(4) invert(0) saturate(2)
+            }
+
+            30%,
+            50% {
+                filter: brightness(10) invert(0) saturate(1)
+            }
+
+            70% {
+                filter: contrast(1) brightness(1) invert(0) saturate(1)
+            }
+        }
+
+        .header {
+            position: relative;
+            min-height: 300px;
+            height: 50vh;
+            margin-bottom: 2.07rem;
+            text-transform: uppercase
+        }
+
+        .header__container {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 100px
+        }
+
+        @media (min-width:500px) {
+            .header__container {
+                display: flex;
+                justify-content: space-between
+            }
+
+            .header__info {
+                text-align: right
+            }
+        }
+
+        .nav__breadcrumb {
+            display: flex;
+            align-items: center;
+            min-height: 28px
+        }
+
+        .nav__breadcrumb li:last-child {
+            display: flex;
+            align-items: center
+        }
+
+        .nav__breadcrumb li:last-child:after {
+            margin-left: .5ch;
+            content: "►";
+            font-size: 1.2em
+        }
+
+        @media (max-width:480px) {
+            .nav {
+                margin-bottom: 2rem
+            }
+
+            .nav__menu li {
+                margin-top: .6rem
+            }
+        }
+
+        .big-text {
+            font-size: clamp(24px, 4.6vw, 63px);
+            font-size: var(--font-size-secondary);
+            text-transform: uppercase
+        }
+
+        .button-text {
+            font-family: inherit;
+            color: inherit;
+            text-decoration: inherit;
+            font-size: inherit;
+            background: inherit;
+            text-transform: inherit;
+            text-shadow: inherit;
+            all: inherit;
+            padding: 0;
+            border: none;
+            display: inline;
+            color: #fff;
+            color: var(--text-secondary);
+            line-height: .9;
+            -webkit-appearance: none;
+            appearance: none
+        }
+
+        .button-text,
+        a {
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            color: var(--text-secondary);
+            background-position: 50%;
+            background-size: 90% 0;
+            background-repeat: no-repeat
+        }
+
+        html:not(.webp) .button-text,
+        html:not(.webp) a {
+            background-image: url(assets/images/rainbow-static.gif)
+        }
+
+        .bio__photo {
+            position: relative;
+            color: #fff;
+            color: var(--text-secondary)
+        }
+
+        .bio__photo:after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 34;
+            z-index: var(--layer-me-hover);
+            top: calc(100% + 1em);
+            left: 1rem;
+            width: 14rem;
+            padding-bottom: 14rem;
+            visibility: hidden;
+            background-size: cover
+        }
+
+        .tv {
+            position: relative;
+            background-color: #000;
+            overflow: hidden;
+            margin: 0 auto
+        }
+
+        .tv-screen {
+            animation: turn-on-transform .4s, turn-on-filter 1s
+        }
+
+        .tv-effect {
+            position: absolute;
+            z-index: 8;
+            z-index: var(--layer-tv-effects);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        .tv-content {
+            position: relative;
+            z-index: 13;
+            z-index: var(--layer-content);
+            overflow-x: hidden;
+            overflow-y: auto;
+            overflow: hidden auto;
+            background-color: rgba(0, 0, 0, .4)
+        }
+
+        .space {
+            position: relative;
+            background-color: #000;
+            overflow: hidden
+        }
+
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: 0 0;
+            width: 4000px;
+            height: 2750px
+        }
+
+        .tv {
+            --spaceIntro: 0.8s;
+            --spaceOutroDelay: 0.2s;
+            transform-origin: center 10%
+        }
+
+        :root {
+            --text-primary: #a0a0a0;
+            --text-secondary: #fff;
+            --font-primary: "VCR OSD Mono", monospace;
+            --font-size-primary: clamp(16px, 1.8vw, 34px);
+            --font-size-secondary: clamp(24px, 4.6vw, 63px);
+            --line-height: 1.4;
+            --layer-top: 55;
+            --layer-me-hover: 34;
+            --layer-content-hover: 21;
+            --layer-content: 13;
+            --layer-tv-effects: 8;
+            --layer-channels: 5;
+            --glitchy-blue: rgba(2, 183, 182, 0.4);
+            --glitchy-red: rgba(183, 2, 2, 0.4);
+            --container-width: 80%;
+            --gui-side: calc(50% - var(--container-width)/2);
+            --gui-bottom: 2.94117647059rem
+        }
+
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #28272a transparent
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent
+        }
+
+        ::-webkit-scrollbar {
+            width: 3px
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #28272a
+        }
+
+        html {
+            font-family: VCR OSD Mono, monospace;
+            font-family: var(--font-primary);
+            font-weight: 400;
+            font-style: normal;
+            color: #a0a0a0;
+            color: var(--text-primary);
+            font-size: clamp(16px, 1.8vw, 34px);
+            font-size: var(--font-size-primary);
+            line-height: 1.4;
+            line-height: var(--line-height)
+        }
+
+        body {
+            background-color: #000;
+            overflow: hidden
+        }
+
+        .space,
+        .spaceship,
+        .tv,
+        .tv-content,
+        .tv-screen,
+        body,
+        html {
+            height: 100%
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            max-width: 100%;
+            min-height: 100vh;
+            width: 80%;
+            width: var(--container-width);
+            margin: 0 auto
+        }
+
+        .glitchy-text {
+            --shadow-x-distance: 2px;
+            --shadow-y-distance: 1px;
+            text-shadow: var(--shadow-x-distance) var(--shadow-y-distance) 0 rgba(2, 183, 182, .4), calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 rgba(183, 2, 2, .4);
+            text-shadow: var(--shadow-x-distance) var(--shadow-y-distance) 0 var(--glitchy-blue), calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 var(--glitchy-red)
+        }
+
+        @media (min-width:481px) {
+            .glitchy-text {
+                --shadow-x-distance: 3px;
+                --shadow-y-distance: 2px
+            }
+        }
+
+        @media (min-width:960px) {
+            .glitchy-text {
+                --shadow-x-distance: 4px;
+                --shadow-y-distance: 3px
+            }
+        }
+
+        .skip-link {
+            position: absolute;
+            z-index: 55;
+            z-index: var(--layer-top);
+            top: 0;
+            left: 0
+        }
+
+        .skip-link:not(:focus) {
+            transform: translateX(-100%)
+        }
+
+        .onoff.svelte-1vrpccc.svelte-1vrpccc {
+            grid-area: 1/2
+        }
+
+        .vol.up.svelte-1vrpccc.svelte-1vrpccc {
+            grid-area: 1/1
+        }
+
+        .vol.down.svelte-1vrpccc.svelte-1vrpccc {
+            grid-area: 2/1
+        }
+
+        .mute.svelte-1vrpccc.svelte-1vrpccc {
+            grid-area: 2/2
+        }
+
+        .ch.up.svelte-1vrpccc.svelte-1vrpccc {
+            grid-area: 1/3
+        }
+
+        .ch.down.svelte-1vrpccc.svelte-1vrpccc {
+            grid-area: 2/3
+        }
+
+        .showhide.svelte-1vrpccc.svelte-1vrpccc {
+            grid-area: 4/2/4/4
+        }
+
+        .brand.svelte-1vrpccc.svelte-1vrpccc {
+            font-weight: 700;
+            grid-area: -1/1/-1/-1;
+            text-align: center;
+            color: #000
+        }
+    </style>
+<script>
+        ! function (A) {
+            "use strict";
+
+            function e(A, e, n) {
+                const o = function (A) {
+                    return window.sessionStorage ? JSON.parse(window.sessionStorage.getItem(A + "Support")) : null
+                }(A);
+                if (null === o) {
+                    const t = new Image;
+                    return t.onload = t.onerror = function () {
+                        n(A, 2 === t.height)
+                    }, void(t.src = e)
+                }
+                t(A, o)
+            }
+
+            function t(e, t) {
+                t && A.documentElement.classList.add(e), window.sessionStorage.setItem(e + "Support", t)
+            }
+            e("webp", "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA",
+                t), e("avif",
+                "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUEAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAF0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgS0AAAAAABNjb2xybmNseAACAAIAAIAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAGVtZGF0EgAKBzgAPtAgIAkyUBAAAPWc41TP///4gHBX9H8XVK7gGeDllq8TYARA+8Tfsv7L+zPE24eIoIzE0WhHbrqcrTK9VEgEG/hwgB5rdCbvP8g3KYPdV88CvPJnptgQ",
+                t)
+        }(document);
+    </script>
+<link rel="preload" href="assets/fonts/VCROSDMono.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/main.entry.c940d9edf9.css" media="print" onload="this.media='all'">
+<link rel="icon" href="assets/images/favicon.png">
+<title>trickster</title><noscript>
+        <link rel="stylesheet" href="assets/main.entry.c940d9edf9.css"></noscript>
+</head>
+<script>
+      var rev = "fwd";
+    function titlebar(val){
+        var msg  = "trickster.pw";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+        msg = "   [[[-"+msg+"-]]]";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+</script>
+<body class="cursor-default" oncontextmenu="alert('hackerman spotted'); return false;">
+<div class="space">
+<div class="stars"></div>
+<div class="spaceship">
+<div class="tv js-tv">
+<div class="tv-screen js-screen">
+<div class="tv-effects">
+<div class="tv-effect --decontrast"></div>
+<div class="tv-effect --static"></div>
+<div class="tv-effect --artifacts"></div>
+<div class="tv-effect --vignette"></div>
+<div class="tv-effect --crt"></div>
+</div>
+<div class="tv-content js-content"><a class="skip-link" href="#content">Skip to content</a>
+<div class="page-container glitchy-text">
+<header class="header">
+<div style="display: flex; justify-content: center; align-items: center;" class="header__container">
+<center>
+<nav class="nav" js-slot="nav">
+<ul class="nav__menu" style="display: inline-block; padding: 50px;">
+<li>main</li>
+<li><a target="_blank" href="https://www.youtube.com/tricksterwashere">youtube</a></li>
+<li><a target="_blank" href="/cdn-cgi/l/email-protection#75161a1b011416013501071c161e060110075b0502">email</a></li>
+</ul>
+</nav>
+</center>
+<div class="header__info">
+<div class="js-header-controls"></div><noscript>
+                                            &nbsp;&nbsp;&nbsp;<br> <div role="button">SOURCE 00</div>
+                                        </noscript>
+</div>
+</div>
+</header>
+<div class="page-content" id="content" js-slot="content">
+<article class="bio">
+<p class="big-text">
+<center>
+<img oncontextmenu="alert('dude stop')" src="./assets/trickster.jpg" style="border-radius:50%;" height="170" width="170" alt="">
+<br>
+<button class="button-text js-channel-trigger" data-channel="9">trickster</button>
+<br>
+<br>
+<p style="font-size: 20px" id="typewriter"></p>
+<br><br>
+<a href="https://trickster.pw/invite" target="_blank">
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 140 140" version="1.1" id="svg11" sodipodi:docname="discord-clyde-icon-white.svg" width="30" height="30" inkscape:version="1.2 (1:1.2.1+202207142221+cd75a1ee6d)">
+<sodipodi:namedview id="namedview13" pagecolor="#505050" bordercolor="#ffffff" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="1" inkscape:deskcolor="#505050" showgrid="false" inkscape:zoom="3.4194686" inkscape:cx="173.12632" inkscape:cy="60.097057" inkscape:window-width="1600" inkscape:window-height="830" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg11" />
+<defs id="defs4">
+<style id="style2">.cls-1{fill:#fff;}</style>
+</defs>
+<g id="图层_2" data-name="图层 2" transform="translate(6.4297751,21.82)">
+<g id="Discord_Logos" data-name="Discord Logos">
+<g id="Discord_Logo_-_Large_-_White" data-name="Discord Logo - Large - White">
+<path class="cls-1" d="M 107.7,8.07 A 105.15,105.15 0 0 0 81.47,0 72.06,72.06 0 0 0 78.11,6.83 97.68,97.68 0 0 0 49,6.83 72.37,72.37 0 0 0 45.64,0 105.89,105.89 0 0 0 19.39,8.09 C 2.79,32.65 -1.71,56.6 0.54,80.21 v 0 A 105.73,105.73 0 0 0 32.71,96.36 77.7,77.7 0 0 0 39.6,85.25 68.42,68.42 0 0 1 28.75,80.07 c 0.91,-0.66 1.8,-1.34 2.66,-2 a 75.57,75.57 0 0 0 64.32,0 c 0.87,0.71 1.76,1.39 2.66,2 a 68.68,68.68 0 0 1 -10.87,5.19 77,77 0 0 0 6.89,11.1 105.25,105.25 0 0 0 32.19,-16.14 v 0 C 129.24,52.84 122.09,29.11 107.7,8.07 Z M 42.45,65.69 C 36.18,65.69 31,60 31,53 31,46 36,40.26 42.43,40.26 48.86,40.26 54,46 53.89,53 53.78,60 48.84,65.69 42.45,65.69 Z m 42.24,0 C 78.41,65.69 73.25,60 73.25,53 c 0,-7 5,-12.74 11.44,-12.74 6.44,0 11.54,5.74 11.43,12.74 -0.11,7 -5.04,12.69 -11.43,12.69 z" id="path6" />
+</g>
+</g>
+</g>
+</svg>
+</a>
+<a target="_blank" href="https://www.roblox.com/users/307802151/profile">
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 200 200" height="30" width="30" version="1.1" id="svg4" sodipodi:docname="Roblox_Logo_Black.svg" inkscape:version="1.2 (1:1.2.1+202207142221+cd75a1ee6d)">
+<defs id="defs8" />
+<sodipodi:namedview id="namedview6" pagecolor="#505050" bordercolor="#ffffff" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="1" inkscape:deskcolor="#505050" showgrid="false" inkscape:zoom="1.3889986" inkscape:cx="149.02822" inkscape:cy="47.156274" inkscape:window-width="1600" inkscape:window-height="830" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg4" />
+<path style="color:#ffff;font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:314px;line-height:125%;font-family:'Gill Sans Ultra Bold';-inkscape-font-specification:'Gill Sans Ultra Bold, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;clip-rule:nonzero;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto" d="M 48.913965,13.0875 13.088095,151.08543 151.08605,186.9125 186.9119,48.91457 Z m 41.21901,70.12644 26.652495,6.91964 -6.91964,26.65248 -26.651285,-6.91963 z" id="path2" />
+</svg>
+</a>
+<a target="_blank" href="https://twitter.com/logout">
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="Logo" x="0px" y="0px" viewBox="0 0 265 265" xml:space="preserve" sodipodi:docname="Twitter-logo.svg" width="30" height="30" inkscape:version="1.2 (1:1.2.1+202207142221+cd75a1ee6d)"><defs id="defs9" /><sodipodi:namedview id="namedview7" pagecolor="#505050" bordercolor="#ffffff" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="1" inkscape:deskcolor="#505050" showgrid="false" inkscape:zoom="1.6151961" inkscape:cx="152.92261" inkscape:cy="113.6085" inkscape:window-width="1600" inkscape:window-height="830" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="Logo_1_" />
+<style type="text/css" id="style2">
+                            .st0{fill:#1D9BF0;}
+                        </style>
+<g id="Logo_1_">
+<path id="white_background" class="st0" d="m 230.375,82.286312 c 0.15,2.17 0.15,4.34 0.15,6.53 0,66.729998 -50.8,143.689998 -143.69,143.689998 v -0.04 c -27.44,0.04 -54.31,-7.82 -77.41,-22.64 3.99,0.48 8,0.72 12.02,0.73 22.74,0.02 44.83,-7.61 62.72,-21.66 -21.61,-0.41 -40.56,-14.5 -47.18,-35.07 7.57,1.46 15.37,1.16 22.8,-0.87 -23.56,-4.76 -40.51,-25.46 -40.51,-49.5 0,-0.22 0,-0.43 0,-0.64 7.02,3.91 14.88,6.08 22.92,6.32 -22.19,-14.829998 -29.03,-44.349998 -15.63,-67.429998 25.64,31.55 63.47,50.73 104.08,52.76 -4.07,-17.54 1.49,-35.92 14.61,-48.25 20.34,-19.12 52.33,-18.14 71.45,2.19 11.31,-2.23 22.15,-6.38 32.07,-12.26 -3.77,11.69 -11.66,21.62 -22.2,27.93 10.01,-1.18 19.79,-3.86 29,-7.95 -6.78,10.16 -15.32,19.01 -25.2,26.16 z" style="fill:#ffffff;fill-opacity:1" />
+</g>
+</svg>
+</a></center>
+</article>
+</div>
+<footer class="footer" id="footer">
+<div class="js-space-trigger"></div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric"
+        }).format(new Date);
+    </script>
+<script async type="module" src="assets/main.entry.d7d1c8f2a8.js"></script>
+<script async src="https://n.panelbear.com/analyticsb20e.js?site=LVrTyzS8YBv"></script>
+
+<script>
+        window.panelbear = window.panelbear || function () {
+            (window.panelbear.q = window.panelbear.q || []).push(arguments)
+        }, panelbear("config", {
+            site: "LVrTyzS8YBv",
+            spaMode: "history"
+        });
+
+var app = document.getElementById('typewriter');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('trickster#7205 - 842568983525457940')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('brickbattling since 2019')
+    .pauseFor(2500)
+    .typeString('')
+    .pauseFor(2500)
+    .start();
+
+    document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+    alert('hacker spotted... no way.')
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    alert('wow your hacking mastery is insane. ')
+    window.location.href = 'https://rule34.xxx/index.php?page=post&s=view&id=6742992';
+
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+    prompt("explain your actions now assfag")
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    alert('wow excellent hacks good sir. ');
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+    </script>
+</body>
+</html>
